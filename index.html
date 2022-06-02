@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>学生进出学校核验</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
 		    function displayTime(){
 		            var elt = document.getElementById("clock");
@@ -13,29 +14,23 @@
 		        window.onload = displayTime;
 		    </script>
 		    <style>
-				#screen{
-					position: relative;
-					width: 750px;
-					height: 1600px;
-					background-image: url("likeccchieh.github.io/手机.png");
-					background-position: center;
+				body{
+					background-image: url(likeccchieh/likeccchieh.github.io/手机.png);
 					background-size: cover;
+					background-repeat: no-repeat;
 				}
 				
 				#clock{
-					font: bold 2.5rem sans;
+					font: bold 1.5rem sans;
 					position:absolute;
 					left: 50%;
-					margin-top: 845px;
+					top:50%;
 					transform: translateX(-50%);
 				}
 		    </style>
 
 	</head>
 	<body>
-		<div id="screen">
-			<span id="clock"></span>
-		</div>
-		
+			<span id="clock"></span>		
 	</body>
 </html>
