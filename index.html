@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>学生进出学校核验</title>
+		<script>
+		    function displayTime(){
+		            var elt = document.getElementById("clock");
+		            var now = new Date();
+		            elt.innerHTML  = now.toLocaleString();
+		            setTimeout(displayTime,1000);
+		            }
+		        window.onload = displayTime;
+		    </script>
+		    <style>
+				body{
+					zoom: 1.0;
+					 width: 375px;
+					 background-image:url(img/手机.png);
+					 background-repeat:no-repeat;
+					 background-position:left top;
+							}
+				
+		    #clock{
+		        font: bold 60pt sans;
+				position: absolute;
+				top: 70%;
+				left: 8%;
+				}
+		    </style>
+
+	</head>
+	<body>
+		<span id="clock"></span>
+	</body>
+</html>
